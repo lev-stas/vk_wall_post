@@ -8,8 +8,8 @@ def get_comics(dir_name):
     response = requests.get('https://xkcd.com/info.0.json')
     comics_data = response.json()
     last_comics = comics_data['num']
-    comics_number = random.randint(1, last_comics)
-    random_response = requests.get(f'https://xkcd.com/{comics_number}/info.0.json')
+    random_number = random.randint(1, last_comics)
+    comics_response = requests.get(f'https://xkcd.com/{comics_number}/info.0.json')
     comics = random_response.json()
     image_link = comics['img']
     extension = comics['img'].split('.')[-1]
@@ -61,7 +61,7 @@ def get_upload_photo(group_id, token, api_url, api_version, dir_name,  message):
                 'from_group': 1
                 
             }
-            post_request = requests.post(f'{api_url}wall.post', params=post_params)
+            post_response = requests.post(f'{api_url}wall.post', params=post_params)
         os.remove(photo_path)
 
 

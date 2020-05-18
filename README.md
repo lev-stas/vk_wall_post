@@ -1,7 +1,7 @@
 ## VK wall post project
 This project allows you to post xkcd comics in you VK group
 
-#### #### Dependencies
+#### Dependencies
 You need python3 interpreter to run this script. It is recommended to use virtual environment for this project to avoid libraries versions conflicts. Install virtualenv library, if you don't have it, create virtual environment and activate it
 ```
 pip install virtualenv
