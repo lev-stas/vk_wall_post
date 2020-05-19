@@ -21,7 +21,8 @@ To run this script, be sure you are in the project directory, and virtual enviro
 python post_comics.py
 ```
 After you run the script, it will create `images` folder in your project directory, download random xkcd comic book to this folder, post it on your VK group wall and delete the image from your computer.
-If the csript doesn't work, you can find logs in the folder `logs` in the project directory.
+
+If the script doesn't work, you can find logs in the folder `logs` in the project directory.
 
 #### Purpose of a project
 This script was performed as a part of API web-services course by [Devman](https://dvmn.org/modules/)
